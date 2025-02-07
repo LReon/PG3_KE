@@ -1,7 +1,7 @@
 #include <Novice.h>
-#include "GameManager.h"
 
-const char kWindowTitle[] = "LE2*_**_***_***";
+
+const char kWindowTitle[] = "LE2D_17_フジワラ_リオ";
 
 // Windowsアプリでのエントリーポイント(main関数)
 int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int) {
@@ -9,14 +9,7 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int) {
 	// ライブラリの初期化
 	Novice::Initialize(kWindowTitle, 1280, 720);
 
-	// 生成
-	GameManager* gameManager = new GameManager();
-
-	// ゲーム実行
-	gameManager->Run();
-
-	// 解放
-	delete gameManager;
+	
 
 	// ライブラリの終了
 	Novice::Finalize();
